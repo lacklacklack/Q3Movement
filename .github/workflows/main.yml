@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         projectPath:
-          - Movement-Main
+          - Q3Movement/Movement-main
         testMode:
           - playmode
           - editmode

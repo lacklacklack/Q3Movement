@@ -1,2 +1,2 @@
 # Movement
-My movement-oriented game
+Q3 Movement style game with testing

@@ -1,6 +1,6 @@
 name: Test project
 
-on: push
+on: [push]
 
 jobs:
   testAllModes:

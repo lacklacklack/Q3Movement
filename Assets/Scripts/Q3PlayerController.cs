@@ -33,21 +33,17 @@ namespace Q3Movement {
 
         public void HandleInput() {
             m_MoveInput = new Vector3(m_InputProvider.GetMovementInput().x, 0, m_InputProvider.GetMovementInput().y);
-            Debug.Log("GetMovementInput" + m_InputProvider.GetMovementInput());
             m_MouseLook.UpdateCursorLock();
             QueueJump();
             if (m_Character.isGrounded) {
-                Debug.Log("GroundMove");
                 GroundMove();
             }
             else {
-                Debug.Log("AirMove");
                 AirMove();
             }
 
             m_MouseLook.LookRotation(m_Tran, m_CamTran);
             m_Character.Move(m_PlayerVelocity * InputProvider.GetDeltaTime());
-            Debug.Log(m_PlayerVelocity);
         }
 
         public void SetUpController() {

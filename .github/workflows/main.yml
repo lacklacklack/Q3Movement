@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   testAllModes:
+    permissions: write-all
     name: Test in ${{ matrix.testMode }}
     runs-on: ubuntu-latest
     strategy:
